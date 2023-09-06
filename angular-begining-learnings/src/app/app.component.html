@@ -1,1 +1,6 @@
 <h2>Hello Harsh</h2>
+<!--With interpolation which accepts only string or numeric -->
+<input type="text" name="user-name" value="{{name}}" disabled={{disable}}/>
+<br/>
+<!--With property binding-->
+<input type="text" name="user-name" [value]=name [disabled]=disable/>

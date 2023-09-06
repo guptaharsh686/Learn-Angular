@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-begining-learnings';
+  count=0;
+  counter(op : string)
+  {
+    op === 'plus' ? this.count++ : this.count--;
+  }
 }

@@ -1,1 +1,16 @@
 <h2>Hello Harsh</h2>
+
+<h1 *ngIf="show; then ifBlock else elseBlock">
+    
+</h1>
+
+<button (click)="change()"> Change show value</button>
+
+<ng-template #ifBlock>
+    <h1>IF Condition</h1>
+</ng-template>
+<ng-template #elseBlock>
+    <h1>Else Condition</h1>
+</ng-template>
+
+

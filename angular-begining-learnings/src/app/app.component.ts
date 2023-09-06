@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-begining-learnings';
+  show = true;
+
+  change(){
+    this.show= ! this.show
+  }
 }

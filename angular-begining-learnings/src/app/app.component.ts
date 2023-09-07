@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-begining-learnings';
+  color='black'
+  bgColor='green'
+
+  updateColor(){
+    this.color = 'red';
+  }
 }

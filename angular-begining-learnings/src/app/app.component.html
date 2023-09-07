@@ -1,1 +1,10 @@
 <h2>Hello Harsh</h2>
+
+<ul *ngFor="let user of users">
+    <li>{{user.name}}</li>
+    <li>{{user.phone}}</li>
+    <ul *ngFor="let acc of user.socialAcc">
+        <li>{{acc}}</li>
+    </ul>
+
+</ul>

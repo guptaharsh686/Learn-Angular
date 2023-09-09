@@ -1,1 +1,16 @@
 <h2>Hello Harsh</h2>
+
+
+<form [formGroup]="loginform" (ngSubmit)="loginuser()">
+    <input type="text" placeholder="Enter Name" name="user" formControlName="user">
+    <br>
+    <span style="color: red;" *ngIf="user && user.invalid && user.touched">This field is not valid</span>
+    <br>
+
+    <input type="password" name="Enter password" name="password" formControlName="password">
+    <br>
+    <span style="color: red;" *ngIf="password && password.invalid && password.touched">This field is not valid</span>
+
+    <br>
+    <button [disabled]="loginform.invalid">Submit</button>
+</form>

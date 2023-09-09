@@ -7,4 +7,24 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-begining-learnings';
+
+
+  userDetails = [
+    {
+      name : 'Anil',
+      email : 'abc@test.com',
+    },
+    {
+      name : 'harsh',
+      email : 'abc@test.com',
+    },
+    {
+      name : 'nikhil',
+      email : 'abc@test.com',
+    },
+    {
+      name : 'sam',
+      email : 'abc@test.com',
+    },
+  ]
 }

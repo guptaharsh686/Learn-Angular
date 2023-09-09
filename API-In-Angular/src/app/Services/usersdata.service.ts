@@ -14,4 +14,9 @@ export class UsersdataService {
    {
     return this.http.get('https://jsonplaceholder.typicode.com/users')
    }
+
+
+   saveusers(data:any){
+    return this.http.post('https://jsonplaceholder.typicode.com/post',data)
+   }
 }

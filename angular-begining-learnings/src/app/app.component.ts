@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-begining-learnings';
+   data = 'x'
+  updateData(item:string){
+    console.warn(item);
+    this.data = item;
+  }
 }

@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-begining-learnings';
+
+
+  getValue(item : HTMLInputElement){
+    console.warn(item);
+  }
 }
